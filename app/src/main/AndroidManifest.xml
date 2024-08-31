@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nda.quanlyphongtro_free">
+    package="com.nda.Rent_Master">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -19,38 +19,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuanLyPhongTro_FREE">
 
-        <activity android:name=".JoinRoom.JoinedRoomDetail"/>
-        <activity android:name=".JoinRoom.JoinRoomSystem"/>
-        <activity android:name=".Note.NoteManagement"/>
-        <activity android:name=".Note.AddUpdateNote"/>
-        <activity android:name=".Houses.UpdateHouse.UpdateHouse"/>
-        <activity android:name=".Houses.HouseDetail.Rooms.RoomDetail.Tenants.UpdateTenant"/>
-        <activity android:name=".Houses.HouseDetail.Rooms.UpdateRoom.UpdateRoom"/>
-        <activity android:name=".Houses.HouseDetail.Rooms.RoomDetail.HoaDon.AddHoaDon"/>
-        <activity android:name=".Houses.HouseDetail.Rooms.RoomDetail.Tenants.AddTenant"/>
-        <activity android:name=".Houses.HouseDetail.Rooms.RoomDetail.RoomDetailSystem"/>
+        <activity android:name="com.nda.Rent_Master.JoinRoom.JoinedRoomDetail"/>
+        <activity android:name="com.nda.Rent_Master.JoinRoom.JoinRoomSystem"/>
+        <activity android:name="com.nda.Rent_Master.Note.NoteManagement"/>
+        <activity android:name="com.nda.Rent_Master.Note.AddUpdateNote"/>
+        <activity android:name="com.nda.Rent_Master.Houses.UpdateHouse.UpdateHouse"/>
+        <activity android:name="com.nda.Rent_Master.Houses.HouseDetail.Rooms.RoomDetail.Tenants.UpdateTenant"/>
+        <activity android:name="com.nda.Rent_Master.Houses.HouseDetail.Rooms.UpdateRoom.UpdateRoom"/>
+        <activity android:name="com.nda.Rent_Master.Houses.HouseDetail.Rooms.RoomDetail.HoaDon.AddHoaDon"/>
+        <activity android:name="com.nda.Rent_Master.Houses.HouseDetail.Rooms.RoomDetail.Tenants.AddTenant"/>
+        <activity android:name="com.nda.Rent_Master.Houses.HouseDetail.Rooms.RoomDetail.RoomDetailSystem"/>
 
-        <activity android:name=".Houses.HouseDetail.Rooms.RoomDetail.HoaDon.UpdateHoaDon"/>
-
-        <activity
-            android:name=".Houses.HouseDetail.Rooms.AddRoom.AddRoom"/>
-        <activity android:name=".Houses.AddHouse.AddHouse" />
+        <activity android:name="com.nda.Rent_Master.Houses.HouseDetail.Rooms.RoomDetail.HoaDon.UpdateHoaDon"/>
 
         <activity
-            android:name=".Tenants.TenantsSystem"
+            android:name="com.nda.Rent_Master.Houses.HouseDetail.Rooms.AddRoom.AddRoom"/>
+        <activity android:name="com.nda.Rent_Master.Houses.AddHouse.AddHouse" />
+
+        <activity
+            android:name="com.nda.Rent_Master.Tenants.TenantsSystem"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".Services.ServicesSystem"
+            android:name="com.nda.Rent_Master.Services.ServicesSystem"
             android:windowSoftInputMode="adjustPan" />
 
         <activity
-            android:name=".Houses.HouseDetail.HouseDetailSystem"
+            android:name="com.nda.Rent_Master.Houses.HouseDetail.HouseDetailSystem"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".Houses.HousesSystem"
+            android:name="com.nda.Rent_Master.Houses.HousesSystem"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".LoginSignUpActivity"
+            android:name="com.nda.Rent_Master.LoginSignUpActivity"
             android:windowSoftInputMode="adjustPan"
             android:exported="true">
             <intent-filter>
@@ -59,7 +59,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.nda.Rent_Master.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
