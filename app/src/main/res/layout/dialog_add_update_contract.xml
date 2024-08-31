@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@drawable/shape_bottomsheet"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txt_contractTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Tạo hợp đồng"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textInputEdt_daiDienNguoiThue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+
+                            android:hint="Đại diện người thuê (*)"
+                            android:inputType="textPersonName"
+
+                            android:maxLines="1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nhà thuê"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/shape_add_house_select_city"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt_showRentHouse"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawableRight="@drawable/ic_baseline_home_work"
+                                android:ellipsize="end"
+                                android:gravity="center|left"
+                                android:maxLines="1"
+                                android:padding="15dp"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phòng thuê"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/shape_add_house_select_city"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt_showRentRoom"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawableRight="@drawable/ic_baseline_meeting_room"
+                                android:ellipsize="end"
+
+                                android:gravity="center|left"
+                                android:maxLines="1"
+
+                                android:padding="15dp"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cam kết số người thuê (*)"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            >
+                            <EditText
+                                android:id="@+id/txt_camKetSoNguoiThue"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+                                android:padding="10dp"
+                                android:inputType="number"
+                                android:background="@drawable/shape_add_house_select_city"
+
+                                android:maxLength="15"
+                                android:textSize="14dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tiền phòng (*)"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            >
+                            <EditText
+                                android:id="@+id/edt_tienPhong"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+                                android:padding="10dp"
+                                android:background="@drawable/shape_add_house_select_city"
+
+                                android:inputType="number"
+                                android:maxLength="30"
+                                android:textSize="14dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tiền cọc (*)"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            >
+                            <EditText
+                                android:id="@+id/edt_tienCoc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+                                android:padding="10dp"
+                                android:background="@drawable/shape_add_house_select_city"
+
+                                android:inputType="number"
+                                android:maxLength="30"
+                                android:textSize="14dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thời hạn (*)"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_add_house_select_city"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                >
+                                <TextView
+                                    android:id="@+id/txt_selectFromDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|left"
+                                    android:textColor="@color/black"
+                                    android:layout_marginRight="5dp"
+
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+
+                                    android:padding="15dp"
+
+
+                                    android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+                                    android:hint="Từ ngày"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+
+                                android:layout_marginLeft="5dp"
+
+                                android:background="@drawable/shape_add_house_select_city"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                >
+                                <TextView
+                                    android:id="@+id/txt_selectToDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|left"
+                                    android:textColor="@color/black"
+
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+
+                                    android:padding="15dp"
+
+
+                                    android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+                                    android:hint="Đến ngày"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ngày bắt đầu tình tiền (*)"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_add_house_select_city"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:id="@+id/txt_selectNgayBatDauTinhTien"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+                                android:layout_marginRight="5dp"
+
+                                android:maxLines="1"
+                                android:ellipsize="end"
+
+                                android:padding="15dp"
+
+
+                                android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+                                android:hint="Ngày bắt đầu tính tiền"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kỳ thanh toán tiền phòng (*)"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            >
+                            <EditText
+                                android:id="@+id/edt_kiThanhToanTienPhong"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+                                android:padding="10dp"
+                                android:background="@drawable/shape_add_house_select_city"
+
+                                android:maxLength="30"
+                                android:textSize="14dp"
+                                android:text="1 Tháng"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dịch vụ phòng"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="( Dịch vụ phòng được lựa chọn thông qua các dịch vụ được thêm vào khi người dùng tạo phòng )"
+                            android:textColor="#FF7347"
+                            android:textSize="14dp"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcv_services"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:overScrollMode="never"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_addContract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/lightskyblue"
+                android:text="Tạo hợp đồng"/>
+
+            <Button
+                android:id="@+id/btn_cancelContract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#E91E63"
+                android:text="Hủy"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

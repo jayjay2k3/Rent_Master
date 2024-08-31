@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Houses.HousesSystem">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/lightskyblue"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:src="@drawable/left_arrow"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1.3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center|left"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Thêm người thuê"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:gravity="center|right"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_addTenant"
+                    android:src="@drawable/ic_baseline_add_512"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/HousesContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:scrollbars="none"
+                android:overScrollMode="never">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+
+                        app:counterMaxLength="35">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textInputEdt_tenantName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+
+                            android:maxLines="1"
+                            android:ellipsize="end"
+
+                            android:hint="Họ và Tên (*)">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textInputEdt_phoneNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxLength="14"
+                            android:hint="Số điện thoại (*)">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textInputEdt_tenantEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:hint="Email">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nhà thuê"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/shape_add_house_select_city"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:id="@+id/txt_showRentHouse"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:padding="15dp"
+                                android:drawableRight="@drawable/ic_baseline_home_work"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phòng thuê"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/shape_add_house_select_city"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:id="@+id/txt_showRentRoom"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+
+                                android:maxLines="1"
+                                android:ellipsize="end"
+
+                                android:padding="15dp"
+                                android:drawableRight="@drawable/ic_baseline_meeting_room"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ngày sinh"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/shape_add_house_select_city"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:id="@+id/txt_selectDob"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+
+                                android:maxLines="1"
+                                android:ellipsize="end"
+
+                                android:padding="15dp"
+
+
+                                android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+                                android:hint="Chọn ngày sinh"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nơi sinh"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+
+
+                        <EditText
+                            android:id="@+id/edt_noiSinh"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+
+                            android:hint="Nhập nơi sinh"
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/shape_add_house_select_city"
+
+                            android:maxLines="1"
+                            android:ellipsize="end"
+
+                            android:padding="10dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Số CMND/CCCD"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+
+
+                        <EditText
+                            android:id="@+id/edt_soCMND"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+
+                            android:hint="Nhập số CMND/CCCD"
+
+                            android:inputType="number"
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/shape_add_house_select_city"
+
+                            android:maxLength="20"
+
+                            android:maxLines="1"
+                            android:ellipsize="end"
+
+                            android:padding="10dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ngày cấp"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/shape_add_house_select_city"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:id="@+id/txt_selectNgayCapCMND"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+
+                                android:maxLines="1"
+                                android:ellipsize="end"
+
+                                android:padding="15dp"
+
+
+                                android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+                                android:hint="Chọn ngày cấp CMND/CCCD"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nơi cấp"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+
+
+                        <EditText
+                            android:id="@+id/edt_noiCapCMND"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="5dp"
+
+                            android:gravity="top"
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/shape_add_house_select_city"
+                            android:hint="Nhập số CMND/CCCD"
+
+                            android:maxLines="1"
+                            android:ellipsize="end"
+
+                            android:padding="10dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

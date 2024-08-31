@@ -1,0 +1,2 @@
+rootProject.name = "QuanLyPhongTro_FREE"
+include ':app'

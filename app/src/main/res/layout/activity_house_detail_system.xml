@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Houses.HouseDetail.HouseDetailSystem">
+    <ImageView
+        android:id="@+id/img_addRoom"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/plus"
+        android:elevation="5dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@color/lightskyblue"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:src="@drawable/left_arrow"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1.4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txt_houseName"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="House Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_editHouse"
+                    android:src="@drawable/ic_edit"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:visibility="gone"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1">
+                        <include
+                            layout="@layout/shimmer_layout1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1">
+                        <include
+                            layout="@layout/shimmer_layout1"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+                    <include
+                        layout="@layout/shimmer_layout1"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp">
+                    <include
+                        layout="@layout/shimmer_layout1"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_optionHouse"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_danhSachPhong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_numberOfRoomsInHouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+
+                    android:maxLines="2"
+                    android:ellipsize="end"
+
+                    android:textColor="@color/black"
+                    android:text="Danh sách phòng"/>
+                <TextView
+                    android:id="@+id/txt_bgColor1"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/lightskyblue"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_chiTietNha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:text="Chi tiết nhà"/>
+                <TextView
+                    android:id="@+id/txt_bgColor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#FFFFFF"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView_searchRoom"
+            app:queryBackground="@null"
+            app:submitBackground="@null"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+
+            app:queryHint="Tìm kiếm Tên phòng / Số tầng"
+            android:background="@drawable/shape_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+        <!--
+            (CONTENT) Danh sách phòng
+        -->
+        <LinearLayout
+            android:id="@+id/ll_showDanhSachPhong"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_rooms"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+        <!--
+            (CONTENT) Chi tiết nhà
+        -->
+        <LinearLayout
+            android:id="@+id/ll_showChiTietNha"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:overScrollMode="never">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_location"/>
+
+                        <TextView
+                            android:id="@+id/txt_houseLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Location of House"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="15dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:background="@drawable/shape_room_sys">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Số phòng"
+                                    android:textSize="15dp"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/txt_numberOfRooms"
+                                    android:layout_width="match_parent"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textSize="15dp"
+                                    android:textColor="#BD2D22"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Số tầng"
+                                    android:textSize="15dp"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/txt_numberOfFloors"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textSize="15dp"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:textColor="#BD2D22"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Số người thuê"
+                                    android:textSize="15dp"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/txt_numberOfTenants"
+                                    android:layout_width="match_parent"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textSize="15dp"
+                                    android:textColor="#BD2D22"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Phí thuê nhà"
+                                    android:textSize="15dp"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/txt_feeRooms"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="0 đ"
+                                    android:textSize="15dp"
+                                    android:maxLines="2"
+                                    android:ellipsize="end"
+                                    android:textColor="#BD2D22"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/shape_room_sys2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Giờ mở cửa"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Giờ đóng cửa"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginBottom="7dp"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chuyển đi báo trước"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center|right"
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txt_goMoCua"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-:-"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:id="@+id/txt_goDongCua"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-:-"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="7dp"
+                                android:layout_marginTop="7dp"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:id="@+id/txt_showBaoTrcNgayChuyen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="- ngày"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Các dịch vụ"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcv_servicesHouseDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="10dp"
+                            android:scrollbars="none"
+                            android:overScrollMode="never"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mô tả"
+                            android:textStyle="bold"
+
+                            android:textColor="@color/black"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ghi chú"
+                            android:textStyle="bold"
+
+                            android:textColor="@color/black"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_note"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13dp"/>
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btn_deleteHouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Xóa Nhà"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#BD2D22"
+                        android:layout_marginBottom="50dp"/>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

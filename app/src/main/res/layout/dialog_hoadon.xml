@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAddHouses"
+
+
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/lightskyblue"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:id="@+id/txtTitle_dialog_add_update"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="Xác nhận hóa đơn"
+                    android:textSize="17dp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="10dp"
+
+
+                >
+                <TextView
+                    android:id="@+id/txt_daThanhToan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Đã thanh toán"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/txt_chuaThanhToan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Chưa thanh toán"
+                    android:background="@color/lightskyblue"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="310dp">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:text="Giá phòng : "
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txt_roomFee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="0 đ"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Tổng giá tiền dịch vụ (*)"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="14dp"/>
+
+                            <EditText
+                                android:id="@+id/edt_sumServiceFee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="top"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:background="@drawable/shape_add_house_select_city"
+
+                                android:textSize="14dp"
+                                android:padding="10dp"
+                                android:hint="0 đ"/>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Ghi chú dịch vụ : "
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+
+
+                        <EditText
+                            android:id="@+id/edt_roomServices"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:hint="Electricity : 0 đ
+                            \nTrash : 0 đ"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:textSize="12dp"
+                    android:backgroundTint="@color/lightskyblue"
+                    android:text="Thêm"
+                    android:textColor="@color/black" />
+
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="3dp"
+                    android:backgroundTint="#F44336"
+                    android:text="Hủy"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/cvAddHouses"
+        android:backgroundTint="#F1D379"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="30dp"
+        android:layout_height="wrap_content">
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

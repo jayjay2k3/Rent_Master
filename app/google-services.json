@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1095514011912",
+    "project_id": "quan-ly-phong-tro-247-free",
+    "storage_bucket": "quan-ly-phong-tro-247-free.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095514011912:android:6b58f74b70657752c094bd",
+        "android_client_info": {
+          "package_name": "com.nda.quanlyphongtro_free"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095514011912-1soreitl5agn7o23r6e9t5qjupt54ibb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvtFwHxTK3pgUt71KYryyDzeezxNM_lXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095514011912-1soreitl5agn7o23r6e9t5qjupt54ibb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

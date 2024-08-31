@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_hoaDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E4E4E4"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1.3">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_dateHoaDon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#11/2022"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/txt_chuaThanhToan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_red"
+                            android:padding="5dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+                            android:text="Chưa thanh toán"/>
+
+                        <TextView
+                            android:id="@+id/txt_daThanhToan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_green"
+                            android:padding="10dp"
+                            android:visibility="gone"
+
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="Đã thanh toán"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_houseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="House Name"
+                        android:gravity="center|left"
+                        android:drawableLeft="@drawable/ic_baseline_home_work"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txt_roomName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Room Name"
+                        android:gravity="center|left"
+                        android:drawableLeft="@drawable/ic_baseline_meeting_room"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tiền phòng"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tiền dịch vụ"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txt_showFullSelectedTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="(1/11/2022)"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="right"
+                    android:layout_weight="0.7">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="3dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txt_tongTien"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" đ"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:text="House Name"
+                        android:gravity="center|left"
+                        android:drawableLeft="@drawable/ic_baseline_home_work"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Room Name"
+                        android:gravity="center|left"
+                        android:visibility="invisible"
+                        android:drawableLeft="@drawable/ic_baseline_meeting_room"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txt_roomFee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" đ"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txt_serviceFee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" đ"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

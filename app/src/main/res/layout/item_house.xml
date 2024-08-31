@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_houseItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#E4E4E4"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_house"/>
+            <TextView
+                android:id="@+id/txt_houseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="House Name"
+
+                android:maxLines="1"
+                android:ellipsize="end"
+
+                android:textColor="@color/lightskyblue"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_location"/>
+
+                <TextView
+                    android:id="@+id/txt_houseCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ha Noi"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+
+                    android:textColor="@color/black"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_houseAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address of House"
+                android:maxLines="2"
+                android:ellipsize="end"
+
+                android:textColor="@color/black"
+                android:textSize="13dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Rent Master</string>
+
+    <string name="share_subject" translatable="false">Rent Master</string>
+    <string name="share_using" translatable="false">Rent Master</string>
+
+    <string name="symbol_m2">Diện tích (m<sup>2</sup>) (*)</string>
+    <string name="symbol_m2_v2">0 m<sup>2</sup></string>
+    <string name="symbol_m2_basic"> m<sup>2</sup></string>
+
+
+    <string name="main_act_house_title">Số Nhà</string>
+    <string name="main_act_room_title">Số Phòng</string>
+    <string name="main_act_tenants_title">Số Người Thuê</string>
+    <string name="main_act_available_title">Các Loại Dịch Vụ</string>
+    <string name="main_act_function_houses">Nhà</string>
+    <string name="main_act_function_service">Dịch Vụ</string>
+    <string name="main_act_function_Contract">Hợp Đồng</string>
+    <string name="main_act_function_tenants">Người Thuê</string>
+    <string name="housesSystem_add_layout_main_title">Thêm Nhà</string>
+    <string name="housesSystem_add_layout_button_add">THÊM</string>
+    <string name="housesSystem_add_layout_title_name">Tên </string>
+    <string name="housesSystem_add_layout_title_location">Địa Điểm </string>
+    <string name="housesSystem_add_error_empty">Không Được Bỏ Trống</string>
+    <string name="housesSystem_update_layout_main_title">Cập Nhập Nhà</string>
+    <string name="housesSystem_update_button">LƯU</string>
+    <string name="roomSystem_add_layout_main_title">Thêm Phòng</string>
+    <string name="roomSystem_add_layout_room_price">"Tiền Nhà "</string>
+    <string name="roomSystem_add_layout_water_price">Tiền Nước</string>
+    <string name="roomSystem_add_layout_electronic_price">Tiền Điện</string>
+    <string name="roomSystem_add_layout_internet_price">Tiền Mạng</string>
+    <string name="roomSystem_add_layout_parking_price">Tiền Gửi Xe</string>
+    <string name="roomSystem_add_layout_note">Ghi Chú</string>
+    <string name="roomSystem_update_layout_main_title">Cập Nhập Phòng</string>
+    <string name="AllTenants">Người Thuê Phòng</string>
+    <string name="tenantsSystem_add_title">Thêm Người Thuê</string>
+    <string name="tenantsSystem_phonenumber_title">Số Điện Thoại</string>
+    <string name="tenantsSystem_update_title">Cập Nhập Người Thuê</string>
+    <string name="serciesSystem_services_title">Dịch Vụ</string>
+    <string name="serciesSystem_add_title">Thêm Dịch Vụ</string>
+    <string name="serciesSystem_update_title">Cập Nhập Dịch Vụ</string>
+    <string name="serciesSystem_price_title">Giá Dịch Vụ</string>
+    <string name="contractDialog_add_title">Thêm Hợp Đồng</string>
+    <string name="setting_title_main">Cài Đặt</string>
+    <string name="setting_share">Chia Sẻ Ứng Dụng</string>
+    <string name="setting_advance">Tính Năng Nâng Cao</string>
+    <string name="setting_timetable">Thời Khóa Biểu - Thời Gian Biểu</string>
+    <string name="general_cancel">HỦY</string>
+    <string name="dialog_title_delete">BẠN MUỐN XÓA ?</string>
+    <string name="message_inquiring">"Đang Truy Vấn "</string>
+</resources>

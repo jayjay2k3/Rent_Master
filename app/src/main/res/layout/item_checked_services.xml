@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_removeCheckedService"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_baseline_remove_circle_outline"/>
+
+    <LinearLayout
+        android:id="@+id/ll_serviceItem"
+        android:gravity="center"
+        android:padding="10dp"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="120dp">
+
+        <ImageView
+            android:id="@+id/img_service"
+            android:src="@drawable/ic_teamwork"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/txtServicesName"
+            android:text="Điện"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+            android:textSize="13dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtServicesCost"
+            android:text="3.500 đ/Kwh"
+            android:textSize="11dp"
+            android:textStyle="bold"
+
+            android:ellipsize="end"
+            android:maxLines="2"
+
+            android:gravity="center"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="#A5241A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

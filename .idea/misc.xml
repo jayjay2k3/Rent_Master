@@ -1,0 +1,125 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/activity_all_tenants.xml" value="0.15925925925925927" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/activity_billing.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/activity_contract_system.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/activity_houses_system.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/activity_main.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/activity_payment_system.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/activity_rooms_system.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/activity_services_system.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/activity_setting.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/activity_tenants_system.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/dialog_add_update_houses.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/dialog_add_update_payment.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/dialog_add_update_rooms.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/dialog_add_update_services.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/dialog_add_update_tenant.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/dialog_contract_image.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/dialog_detele.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/dialog_goto_timetable.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/dialog_show_note.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/item_layout_contract.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Motel-Management-FREE/app/src/main/res/layout/item_layout_houses.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/ic_baseline_add_512.xml" value="0.1465" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/ic_baseline_arrow_down.xml" value="0.138" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.1585" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/ic_baseline_calendar_month_24.xml" value="0.1585" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/ic_baseline_drive_file_rename.xml" value="0.1495" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/ic_baseline_email.xml" value="0.1495" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/ic_baseline_home_work.xml" value="0.172" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/ic_baseline_lock.xml" value="0.138" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/ic_baseline_meeting_room.xml" value="0.1585" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/ic_baseline_person.xml" value="0.1585" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.1555" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/left_arrow.xml" value="0.1585" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/main_shape.xml" value="0.125" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_add_house_select_city.xml" value="0.1555" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_bottomsheet.xml" value="0.176" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_edt_note.xml" value="0.144" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_frame.xml" value="0.1585" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_green.xml" value="0.172" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_green_non_solid.xml" value="0.172" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_login_signup.xml" value="0.1435" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_red.xml" value="0.172" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_red_non_solid.xml" value="0.172" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_room_sys.xml" value="0.173" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_room_sys2.xml" value="0.173" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_search_view.xml" value="0.159" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/drawable/shape_yellow_non_solid.xml" value="0.172" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_add_hoadon.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_add_house.xml" value="0.25104166666666666" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_add_note.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_add_room.xml" value="0.264" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_add_tenant.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_all_tenants.xml" value="0.25416666666666665" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_contract_system.xml" value="0.25416666666666665" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_house_detail_system.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_houses_system.xml" value="0.25104166666666666" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_login_sign_up.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_main.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_note.xml" value="0.25416666666666665" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_payment_system.xml" value="0.25416666666666665" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_room_detail_system.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_rooms_system.xml" value="0.264" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_services_system.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_setting.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_tenants_system.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_update_hoadon.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_update_house.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_update_room.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/activity_update_tenant.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/bottomsheet_contract.xml" value="0.24947916666666667" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/bottomsheet_forgot_password.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/bottomsheet_hoadon_option.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/bottomsheet_tenant_option.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_add_contract.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_add_services.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_add_update_contract.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_add_update_houses.xml" value="0.25104166666666666" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_add_update_payment.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_add_update_services.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_add_update_tenant.xml" value="0.25416666666666665" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_contract_image.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_delete.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_detele.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_goto_timetable.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_hoadon.xml" value="0.264" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_select_state_city.xml" value="0.25104166666666666" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_services_add_house.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_show_note.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_sign_up_success.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/dialog_update_contract.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/fragment_note.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_checked_services.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_city_of_houses.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_hoadon.xml" value="0.264" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_house.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_layout_contract.xml" value="0.25416666666666665" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_layout_houses.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_layout_payment.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_layout_rooms.xml" value="0.2869791666666667" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_layout_services.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_layout_tenants.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_note.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_services.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_services2_add_house.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_services_add_hoa_don.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_services_add_house.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_services_add_room.xml" value="0.25416666666666665" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_services_room_system.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_simple_text.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/item_tenants.xml" value="0.25052083333333336" />
+        <entry key="..\:/(Related)Programming/AndroidStudio/Result/GG/Quan_Ly_Phong_Tro_24-7/app/src/main/res/layout/shimmer_layout1.xml" value="0.24947916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
